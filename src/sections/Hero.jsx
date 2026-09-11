@@ -1,4 +1,4 @@
-import { ArrowDownRight } from "lucide-react";
+import { ArrowDownRight, MapPin } from "lucide-react";
 import { personalInfo } from '../data/data';
 import fotoCarlos from '../assets/foto_carlos.jpeg';
 
@@ -79,8 +79,11 @@ export default function Hero() {
             </div>
 
             <div className="w-[1px] h-4 bg-slate-700 hidden sm:block"></div>
-            
-            <span className="text-xs font-mono text-slate-300">📍 Brasil · Remoto</span>
+
+            <span className="text-xs font-mono text-slate-300 flex items-center gap-1.5">
+              <MapPin size={13} className="text-blue-400" />
+              Brasil · Remoto
+            </span>
           </div>
         </div>
 
@@ -96,18 +99,18 @@ export default function Hero() {
                 alt="Carlos Emanuel" 
                 className="w-full h-full object-cover object-top"
               />
-              
-              {/* Selo integrado no canto superior ou inferior da foto para evitar sobreposição feia */}
-              <div className="absolute bottom-3 right-3 z-20 bg-[#050b18]/90 border border-slate-700 px-3 py-1.5 rounded-lg flex items-center gap-2 shadow-lg backdrop-blur-md">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span className="text-[11px] font-mono text-white">Aberto a oportunidades</span>
-              </div>
             </div>
 
             <div className="relative z-10 flex justify-between items-end text-xs font-mono text-slate-300 pt-4 border-t border-slate-800 mt-4">
               <div>
                 <p className="font-semibold text-white">Carlos Emanuel</p>
                 <p className="text-[10px] text-slate-400">Desenvolvedor Front-End</p>
+              </div>
+
+              {/* Badge de disponibilidade, agora ao lado do nome */}
+              <div className="flex items-center gap-2 bg-[#050b18]/90 border border-slate-700 px-2.5 py-1 rounded-lg">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span className="text-[10px] font-mono text-white whitespace-nowrap">Disponível para projetos</span>
               </div>
             </div>
 
