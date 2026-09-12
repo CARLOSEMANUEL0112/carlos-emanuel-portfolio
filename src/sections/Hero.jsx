@@ -1,6 +1,6 @@
 import { ArrowDownRight, MapPin } from "lucide-react";
 import { personalInfo } from '../data/data';
-import fotoCarlos from '../assets/foto_carlos.jpeg';
+import fotoCarlos from '../assets/Carlos-emanuel.png';
 
 export default function Hero() {
   return (
